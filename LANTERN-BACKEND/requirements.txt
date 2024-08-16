@@ -3,3 +3,5 @@ Flask_Cors==4.0.1
 keras==3.5.0
 Pillow
 torch==2.4.0
+open-clip-torch
+tensorflow
