@@ -176,7 +176,7 @@ Teja koduru - [@TJKoduru](https://twitter.com/TJKoduru) - tkoduru@umich.edu
 [issues-shield]: https://img.shields.io/github/issues/TSKoduru/LANTERN.svg?style=for-the-badge
 [issues-url]: https://github.com/TSKoduru/LANTERN/issues
 [license-shield]: https://img.shields.io/github/license/TSKoduru/LANTERN.svg?style=for-the-badge
-[license-url]: https://github.com/TSKoduru/LANTERN/blob/master/LICENSE.txt
+[license-url]: https://github.com/TSKoduru/LANTERN/blob/master/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/TSKoduru
 [3D-View-Top]: assets/3D-View-Top.png
