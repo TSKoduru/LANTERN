@@ -37,7 +37,7 @@
 <h3 align="center">LANTERN</h3>
 
   <p align="center">
-    An open-source binary watch to make at home! (WIP)
+    An application to accurately detect Lyme disease!
     <br />
     <a href="https://github.com/TSKoduru/LANTERN"><strong>Explore the docs »</strong></a>
     <br />
@@ -47,6 +47,8 @@
     <a href="https://github.com/TSKoduru/LANTERN/issues">Report Bug</a>
     ·
     <a href="https://github.com/TSKoduru/LANTERN/issues">Request Feature</a>
+    ·
+    <a href="">Check out the DEVPOST</a>
   </p>
 </div>
 
@@ -83,21 +85,52 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-NOTE: This project is still under active development. The software needs to be tested, and the case needs to be designed. I'll update this page with more information as I make progress. Please don't jump into manufacturing this watch just yet. I'll let you know when it's ready. Feel free to look around, though!
+### Background
 
+Back when I was a young kid, I got bitten by a tick and developed this large, bullseye-shaped rash. Here's what it looks like:
 
-![3D-View][3D-View-Top]
+<br/>
+<div align = "center">
+  <img src="assets/EM.png" alt="EM" width="200" height="200" border-radius="50%">
+</div>
+<br/>
+Turns out, that was one of the damning symptoms of Lyme disease. Unfortunately, I wasn't able to get it diagnosed early enough, so I slowly lost control of my arms and legs over about a month. Eventually, I had to go to school in a wheelchair - It was bad.
+
+</br>
+Lyme actually has a pretty effective treatment; The problem is just in it's diagnosis. The rash that I got, though a pretty clear signal of Lyme, is often diagnosed as another type of disease. Here's an example of a rash that looks similar, but isn't Lyme:
+
+<br/>
+<div align = "center">
+  <img src="assets/non-EM.png" alt="EM" width="200" height="200" border-radius="50%">
+</div>
+<br/>
+
+So, the goal was to develop a system that could accurately diagnose Lyme disease from a picture of a rash. This updated version of the system takes advantage of the newest in computer vision tech - transformers - To provide even more accurate results with even less data. I'm excited to see where this project goes, and I hope that it can help a lot of people.
+
+Credit where credit is due: I worked with Edward Zhang, a friend of mine, on the first version of this project back in school. He was a huge help - Be sure to check out his insta [here!](https://www.instagram.com/edward_z99/)
+
+## Some interesting statistics
+
+Just so you know the extent of the problem, here are some statistics about Lyme disease:
+
+* [Lyme disease is the most common vector-borne disease in the United States](https://health.ucdavis.edu/conditions/infectious-diseases/vector-borne-diseases)
+* [In 2022, over 60,000 new cases of Lyme disease were reported.](https://www.cdc.gov/lyme/data-research/facts-stats/index.html#:~:text=Key%20points,not%20actually%20have%20Lyme%20disease.)
+* [The CDC estimates that the actual number of cases is closer to 476,000](https://www.cdc.gov/lyme/data-research/facts-stats/index.html#:~:text=Key%20points,not%20actually%20have%20Lyme%20disease.)
+* [Lyme can cause nerve problems, paralysis, meningtitis, or even heart problems.](https://www.pennmedicine.org/for-patients-and-visitors/patient-information/conditions-treated-a-to-z/lyme-disease#:~:text=Numbness%20or%20pain%20in%20the,can%20cause%20lightheadedness%20or%20fainting.)
+
+As you can see, it's a pretty big issue.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-I saw an article at the start of summer about a cool little watch that somebody had made for themselves. It told time in binary format, and I thought it looked pretty cool. So, I decided to make my own version of it, so I could learn PCB design, soldering, and embedded programming. I also wanted to make it open-source, so that others could make their own versions of it, and learn from my mistakes. Speaking of which, I made a lot of mistakes. There's probably a few things to improve, so if you have any suggestions, feel free to open an issue or a pull request. Thanks for checking out my project!
-
 ### Built With
 
-* [![Altium Designer](https://img.shields.io/badge/Altiuim-AD20-blue)](https://www.altium.com/)
-* [![Arduino](https://img.shields.io/badge/Arduino-IDE-blue)](https://www.arduino.cc/)
-
+* [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+* [![Tensorflow](https://img.shields.io/badge/Tensorflow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)](https://www.tensorflow.org/)
+* [![Keras](https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=Keras&logoColor=white)](https://keras.io/)
+* [![React.js](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
+* [![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)](https://flask.palletsprojects.com/en/2.0.x/)
+* [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://www.javascript.com/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -107,82 +140,23 @@ I saw an article at the start of summer about a cool little watch that somebody 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-If you're looking to make your own version of this project, you'll need to do the following:
-
-* Get the GERBER and drill files from the COMPRESSED folder, and send them to a PCB manufacturer. I used JLCPCB, and they worked great. You can find the link to their website [here](https://jlcpcb.com/quote). If you want to modify the PCB, you're going to want to download the .PCB files and open them in your editor of choice.
-
-* Order the parts from the BOM file. You can find the BOM file in the BOM folder. I ordered my parts from Digikey, but you can order them from wherever you want. Pro tip: The RTC module is super expensive (Cost me ~11 dollars), so if you want to save a few dollars, try to find someone selling it for cheap.
-
-* Solder the parts onto the PCB. You can use a soldering iron for this, but it'd go a lot faster if you use a hot plate or a reflow oven. I used a hot plate, and it worked great. Just make sure to use a lot of flux, and you should be fine.
-
-* Program the Arduino. You can find the code in the Arduino folder. Just open the .ino file in the Arduino IDE, and upload it to your Arduino. The process to do this is a little complicated, so I'd recommend looking up a tutorial. It involves flashing a bootloader to the chip from another atmega chip, and then using an adapater to upload the program.
-
-* If you want to make a custom case, the 3D file for the PCB is located in the step folder.
-
+Hey, thanks for checking out the project! Luckily for you, testing it is pretty easy. I've gone ahead and hosted the project on a public server, so you can check it out [here.]()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Final Thoughts
 
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-The controls for this watch are pretty simple:
-
-
-* The watch is meant to be worn on the left hand. All instructions will be given assuming that you are wearing it on your left hand.
-
-* Firstly, power the watch with 3.3V lithium coin cell batteries. The watch is configured to go into deep sleep when not in use, so it should last a while.
-
-* If the battery is low, a special LED near the bottom right of the watch will light up. If this LED is on, you should change out the battery as soon as possible.
-
-* Both switches are located on the right side of the watch. The top switch is the ON/OFF switch, and the bottom switch is the MODE switch.
-
-* To use the watch, simply press the ON/OFF switch. The watch will turn on, and the time will be displayed. If you want to see the date or temperature, press the mode switch. The corresponding 'state' LEDs, located at the top right of the board, will light up to show you what state you are in.
-
-* If you need to set the time (Which you'll need to do after changing the batteries), press the mode switch 5 times. The watch will enter the time setting mode, and the time will start flashing. Press the mode switch to cycle through the hours, minutes, and seconds. Press the ON/OFF switch to increment the selected value. Press the ON/OFF switch to confirm the value, and move on to the next one.
-
-* Again, information is always displayed in binary, with the left column being the most significant bit, and the right column being the least significant bit. The time is displayed in 24-hour format, and the date is displayed in the format DD/MM/YYYY.
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-- [ ] Order and manufacture the prototype.
-- [ ] Test the prototype software and hardware (Specifically the watch case).
-- [ ] Begin manufacturing the final product.
-
-See the [open issues](https://github.com/TSKoduru/LANTERN/issues) for a full list of proposed features (and known issues).
+Again, thanks for reading through this! If you have any suggestions, feel free to hit me up. Also, if you can, go vote for my project on devpost [here](https://devpost.com/software/lantern-lyme-disease-diagnosis)!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the GNU General Public License v3.0. See `LICENSE` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- CONTACT -->
@@ -190,19 +164,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Teja koduru - [@TJKoduru](https://twitter.com/TJKoduru) - tkoduru@umich.edu
 
-Project Link: [https://github.com/TSKoduru/LANTERN](https://github.com/TSKoduru/LANTERN)
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-* [Sverd Industries](https://www.instructables.com/Binary-Wrist-Watch/)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
