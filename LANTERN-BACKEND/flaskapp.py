@@ -2,6 +2,7 @@
 # ------------ 
 
 import flask # To handle the API calls
+from flask_cors import CORS, cross_origin # To handle CORS
 import open_clip # For the tokenizer
 import keras # To load the model
 import torch # To generate embeddings
@@ -58,6 +59,8 @@ def classify_image(base64_image):
 # ------------
 
 app = flask.Flask(__name__)
+cors = CORS(app)
+app.config['CORS_HEADERS'] = 'Content-Type'
 
 # DEFINING API ENDPOINTS
 # ------------
@@ -103,8 +106,8 @@ def hello():
 </html>
 """
 
-
 @app.route('/classify', methods=['POST'])
+@cross_origin()
 def classify():
     image = flask.request.json['image']
     classification = classify_image(image)
