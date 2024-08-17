@@ -48,7 +48,7 @@
     ·
     <a href="https://github.com/TSKoduru/LANTERN/issues">Request Feature</a>
     ·
-    <a href="">Check out the DEVPOST</a>
+    <a href="https://devpost.com/software/lantern-u5d1lv">Check out (Upvote?) the DEVPOST</a>
   </p>
 </div>
 
@@ -69,9 +69,6 @@
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
-    </li>
-    <li>
-      <a href="#final-thoughts">Final Thoughts</a>
     </li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -114,7 +111,7 @@ Just so you know the extent of the problem, here are some statistics about Lyme 
 * [Lyme disease is the most common vector-borne disease in the United States](https://health.ucdavis.edu/conditions/infectious-diseases/vector-borne-diseases)
 * [In 2022, over 60,000 new cases of Lyme disease were reported.](https://www.cdc.gov/lyme/data-research/facts-stats/index.html#:~:text=Key%20points,not%20actually%20have%20Lyme%20disease.)
 * [The CDC estimates that the actual number of cases is closer to 476,000](https://www.cdc.gov/lyme/data-research/facts-stats/index.html#:~:text=Key%20points,not%20actually%20have%20Lyme%20disease.)
-* [Lyme can cause nerve problems, paralysis, meningtitis, or even heart problems.](https://www.pennmedicine.org/for-patients-and-visitors/patient-information/conditions-treated-a-to-z/lyme-disease#:~:text=Numbness%20or%20pain%20in%20the,can%20cause%20lightheadedness%20or%20fainting.)
+* [Lyme can cause nerve problems, paralysis, meningitis, or even heart problems.](https://www.pennmedicine.org/for-patients-and-visitors/patient-information/conditions-treated-a-to-z/lyme-disease#:~:text=Numbness%20or%20pain%20in%20the,can%20cause%20lightheadedness%20or%20fainting.)
 
 As you can see, it's a pretty big issue.
 
@@ -138,13 +135,7 @@ As you can see, it's a pretty big issue.
 <!-- GETTING STARTED -->
 ## Getting Started
 
-Hey, thanks for checking out the project! Luckily for you, testing it is pretty easy. I've gone ahead and hosted the project on a public server, so you can check it out [here.]()
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## Final Thoughts
-
-Again, thanks for reading through this! If you have any suggestions, feel free to hit me up. Also, if you can, go vote for my project on devpost [here](https://devpost.com/software/lantern-lyme-disease-diagnosis)!
+Hey, thanks for checking out the project! You can check out a video demo of the project [here](https://youtu.be/Oxv1sQTxHtc), or see the DEVPOST [here](https://devpost.com/software/lantern-u5d1lv). Sorry that you can't run the project locally - I'm having issues trying to find a place to host it. If you have any suggestions, feel free to hit me up!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

@@ -60,7 +60,7 @@ function MyDropzone() {
       <input{...getInputProps()} />
       {
         <div>
-          <h2>Click <a>here</a> to add a file!.</h2>
+          <h2>Click <a>here</a> to add a file!</h2>
           <p> Note that large or off-domain images might not yield accurate results.</p>
         </div>
       }
